@@ -118,8 +118,8 @@ static int A7105_calibrate_VCB()
 
 int A7105_EnterWOR()
 {
-  uint8_t RCOT = 0;
-  uint16_t count, calibration_result;
+  uint8_t RCOT = 0, calibration_result;
+  uint16_t count;
 
   A7105_Strobe(A7105_STANDBY);
   A7105_WriteReg(A7105_07_RC_OSC_I, 0xff);
